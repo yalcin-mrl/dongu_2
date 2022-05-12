@@ -5,10 +5,13 @@ public class Dongu2 {
         int num;
         Scanner sc = new Scanner(System.in);
         num = sc.nextInt();
-        for(int i =1;i<=num;i++){
-            if(i%4==0 && i%5 == 0){
-                System.out.println(i);
-            }
+        System.out.print("4'ün kuvveetleri: ");
+        for(int i=1;i<=num;i*=4){
+            System.out.print(i + " ");
+        }
+        System.out.print("\n5'ün kuvveetleri: ");
+        for(int i=1;i<=num;i*=5){
+            System.out.print(i + " ");
         }
     }
 }
